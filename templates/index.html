@@ -1,0 +1,79 @@
+<html>
+<head>
+<title>Ambiguity demo</title>
+
+
+    <style>
+body {  background-color:azure;
+        font-family: "Helvetica";
+        font-size: 14;
+        }
+
+footer {
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    overflow:hidden;
+}      
+        
+input[type=submit] {
+    padding:2px 15px; 
+    background-color:firebrick; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+    font-size: 14;
+    color: white;
+}
+
+        
+a {
+    color:dimgrey;
+}
+        
+.button {
+  background-color: firebrick;
+  padding: 7px 10px 7px 10px;
+  border:0 none;
+  cursor:pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 14;
+  text-decoration: none;
+  color: white;
+}
+        
+</style>
+</head>
+<body>
+<center>
+<h1>Ambiguity demo</h1>
+    
+<form id="search" action='/search/' method="POST">
+<table>
+    <tr>
+        <td>Sentence:</td><td><input type="text" size="80" name="text" value="{{text}}"/></td>
+    </tr>
+    <tr>
+        <td><input type='submit' value='Compute'/></td>
+    </tr>
+</table>
+ 
+</form>
+</center>
+
+
+<center>
+<table>
+    <tr>
+        <td>{{text}}</td>
+    </tr>
+
+</table>
+</center>
+
+</body>
+</html>
